@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Tinos&display=swap');
+
+$Tinos:  'Tinos', serif;
+
+
+// colors
+$dark: #C4A484;
+$light: #D3D3D3 ;
+$primary: #22313f ; 
+$bg: rgb(244,244,244);
+
+// spacing
+$spacing-md: 16px;
+$spacing-lg: 32px;
+
+// border radius
+$borderRadius: 12px;
+
+// header height
+$headerHeight: 100px;
+
+@mixin breakpoint($point) {
+    @if $point == md {
+        // 768px
+        @media (min-width: 48em) {
+            @content;
+        }
+    }
+}
