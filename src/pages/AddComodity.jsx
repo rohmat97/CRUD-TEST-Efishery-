@@ -1,6 +1,6 @@
 import axios from 'axios';
 import React, { useEffect, useState } from 'react'
-import LoadingAdd from '../components/Comodity.js/LoadingAdd';
+import LoadingAdd from '../components/Comodity/LoadingAdd';
 import { store } from '../services/Lotties'
 import { useNavigate } from 'react-router-dom';
 import SuccessAdd from '../components/Comodity/SuccessAdd';
