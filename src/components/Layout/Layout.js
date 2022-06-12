@@ -1,11 +1,13 @@
 import React from 'react'
 import Header from '../Header/Header'
-import "./Layout.model.scss"
+
+// import classes from "./Layout.module.scss"
+
 function Layout({ children }) {
   return (
     <>
-        <Header />
-        <div className="classes container">{children}</div>
+      <Header />
+      <div>{children}</div>
     </>
   )
 }

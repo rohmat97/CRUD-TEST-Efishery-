@@ -1,21 +1,45 @@
-import {Route, Routes } from "react-router-dom";
+import { useEffect, useState } from "react";
+import { Route, Routes } from "react-router-dom";
+import Background from "./Background";
 import Layout from "./components/Layout/Layout";
+import AddComodity from "./pages/AddComodity";
+import EditComodity from "./pages/EditComodity";
 import Home from "./pages/Home";
-import PageCTA from "./pages/PageCTA";
-import PageOne from "./pages/PageOne";
-import PageThree from "./pages/PageThree";
-import PageTwo from "./pages/PageTwo";
+import { ThemeProvider } from "./ThemeContext";
+import Toggle from "./ThemeToggle";
+
 function App() {
+  const [size, setsize] = useState({
+    width: undefined,
+    height: undefined
+  })
+  const [editData, seteditData] = useState()
+  useEffect(() => {
+    const handleResize = () => {
+      setsize({
+        width: window.innerWidth,
+        height: window.innerHeight
+      })
+    }
+    window.addEventListener("resize", handleResize)
+    return () => window.removeEventListener("resize", handleResize)
+  }, [])
+
   return (
-  <Layout>
-    <Routes>
-      <Route path="/" element={<Home />} />
-      <Route path="/cta" element={<PageCTA />} />
-      <Route path="/1" element={<PageOne />} />
-      <Route path="/2" element={<PageTwo />} />
-      <Route path="/3" element={<PageThree />} />
-    </Routes>
-  </Layout>
+    <Layout>
+     <ThemeProvider>
+      <Background>
+          <div className={size.width < 800 ?"absolute right-0 md:mr-6 md:mt-6":"absolute right-0 top-0 mr-4 mt-4 md:mr-6 md:mt-6"}>
+            <Toggle />
+          </div>
+          <Routes>
+              <Route path="/" element={<Home seteditData={seteditData} editData={editData} />} />
+              <Route path="/Add" element={<AddComodity />} />
+              <Route path="/Edit" element={<EditComodity editData={editData} />} />
+          </Routes>
+        </Background>
+      </ThemeProvider>
+    </Layout>
   );
 }
 

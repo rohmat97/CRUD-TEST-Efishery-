@@ -1,7 +1,6 @@
 @import "../../styles/variables.scss";
 
 .header {
-    background: $dark;
     width: 100%;
     height: $headerHeight;
     padding: 0 1.5rem;
@@ -12,7 +11,7 @@
 
     &__content {
         overflow: hidden;
-        color: $light;
+        color: $primary;
         margin: 0 auto;
         max-width: 1920px;
         height: 100%;
@@ -26,7 +25,7 @@
             font-size: 2rem;
             font-weight: bold;
             text-decoration: none;
-            color: $light;
+            color: $primary;
         }
 
         &__nav {
@@ -99,18 +98,18 @@
                 font-size: 1rem;
                 font-family: inherit;
                 background: $primary;
-                color: $dark;
+                color: $primary;
                 border: 1px solid transparent;
                 transition: 0.3s ease all;
 
                 &:hover {
                     border-color: $primary;
-                    background: rgba($light, 0.5);
+                    background: rgba($light, 1);
                     color: $primary;
                 }
                 &:active {
                     border-color: $primary;
-                    background: linear-gradient(rgba($primary, 0.2), rgba($primary, 0.3));
+                    background: linear-gradient(rgba($primary, 1), rgba($primary, 1));
                     color: $primary;
                 }
             }
