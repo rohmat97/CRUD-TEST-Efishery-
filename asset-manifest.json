@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/efishery/static/css/main.9ae1c3b9.css",
+    "main.js": "/efishery/static/js/main.2a97d3ad.js",
+    "static/media/header.gif": "/efishery/static/media/header.83e478f46f678ae202b6.gif",
+    "static/media/success-delete.gif": "/efishery/static/media/success-delete.aefcf74ed9f55547b461.gif",
+    "static/media/warning.gif": "/efishery/static/media/warning.fef533ccf9ed16fe81f4.gif",
+    "index.html": "/efishery/index.html",
+    "main.9ae1c3b9.css.map": "/efishery/static/css/main.9ae1c3b9.css.map",
+    "main.2a97d3ad.js.map": "/efishery/static/js/main.2a97d3ad.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9ae1c3b9.css",
+    "static/js/main.2a97d3ad.js"
+  ]
+}
