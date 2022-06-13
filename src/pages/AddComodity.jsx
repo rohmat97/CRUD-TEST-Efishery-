@@ -209,9 +209,9 @@ const AddComodity = () => {
             placeholder="Price"
           />
         </div>
-        <li className="flex-1 mr-2" onClick={() => PostAddComodity()}>
+        <div className="mr-2" onClick={() => PostAddComodity()}>
           <a className="text-center block border border-[#C4A484] rounded py-2 px-4 bg-[#D3D3D3] hover:bg-[#C4A484] text-white" >Submit</a>
-        </li>
+        </div>
       </form>
     </div>
   )
