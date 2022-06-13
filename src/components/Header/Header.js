@@ -69,7 +69,7 @@ function Header() {
           </div>
         </div>
       </header>
-  </body>
+    </body>
   )
 }
 

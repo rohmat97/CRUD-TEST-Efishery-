@@ -111,7 +111,7 @@ export function AvatarCell({ value, column, row }) {
 
 function Table(props) {
     // Use the state and functions returned from useTable to build your UI
-    
+
     const navigate = useNavigate();
     const {
         setDeleteActive,
@@ -254,13 +254,13 @@ function Table(props) {
                                                             // role="cell"
                                                             >
                                                                 <AiTwotoneEdit
-                                                                    onClick={async() => {
+                                                                    onClick={async () => {
                                                                         await seteditData(cell.row.original)
                                                                         navigate('/crud-test-efishery/edit')
                                                                     }}
                                                                     className='w-8 h-8 text-[#C4A484] mr-4' />
                                                                 <AiFillDelete
-                                                                    onClick={async() => {
+                                                                    onClick={async () => {
                                                                         await setparamsDelete(cell.row.original)
                                                                         await setDeleteActive(true)
                                                                         window.scrollTo(0, 0)

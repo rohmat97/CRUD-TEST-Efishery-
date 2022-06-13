@@ -27,15 +27,15 @@ function App() {
 
   return (
     <Layout>
-     <ThemeProvider>
-      <Background>
-          <div className={size.width < 800 ?"absolute right-0 md:mr-6 md:mt-6":"absolute right-0 top-0 mr-4 mt-4 md:mr-6 md:mt-6"}>
+      <ThemeProvider>
+        <Background>
+          <div className={size.width < 800 ? "absolute right-0 md:mr-6 md:mt-6" : "absolute right-0 top-0 mr-4 mt-4 md:mr-6 md:mt-6"}>
             <Toggle />
           </div>
           <Routes>
-              <Route path="/crud-test-efishery/" element={<Home seteditData={seteditData} editData={editData} />} />
-              <Route path="/crud-test-efishery/Add" element={<AddComodity />} />
-              <Route path="/crud-test-efishery/Edit" element={<EditComodity editData={editData} />} />
+            <Route path="/crud-test-efishery/" element={<Home seteditData={seteditData} editData={editData} />} />
+            <Route path="/crud-test-efishery/Add" element={<AddComodity />} />
+            <Route path="/crud-test-efishery/Edit" element={<EditComodity editData={editData} />} />
           </Routes>
         </Background>
       </ThemeProvider>

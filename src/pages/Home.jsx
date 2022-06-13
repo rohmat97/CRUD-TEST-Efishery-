@@ -7,7 +7,7 @@ import LoadingState from '../components/Home/LoadingState';
 import { store } from '../services/Lotties';
 import DeleteSuccess from '../components/Home/DeleteSuccess';
 const Home = (props) => {
-    const { seteditData , editData} = props
+    const { seteditData, editData } = props
     const [listData, setlistData] = useState([])
     const [limit, setlimit] = useState([])
     const [DeleteActive, setDeleteActive] = useState(false)
@@ -101,7 +101,7 @@ const Home = (props) => {
             }, 1000);
         }
     }, [listData, limit])
-    
+
     return (
         <div className="min-h-screen text-gray-900">
             {

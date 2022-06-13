@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaSun, FaMoon} from "react-icons/fa";
+import { FaSun, FaMoon } from "react-icons/fa";
 import { ThemeContext } from './ThemeContext';
 
 const Toggle = () => {
@@ -13,11 +13,11 @@ const Toggle = () => {
                     className="text-gray-500 dark:text-gray-400 text-2xl cursor-pointer"
                 />
             ) : (
-                    <FaMoon
-                        onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
-                        className="text-gray-500 dark:text-gray-400 text-2xl cursor-pointer"
-                    />
-                )}
+                <FaMoon
+                    onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
+                    className="text-gray-500 dark:text-gray-400 text-2xl cursor-pointer"
+                />
+            )}
         </div>
     );
 };
