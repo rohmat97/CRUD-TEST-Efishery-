@@ -33,6 +33,7 @@ function App() {
             <Toggle />
           </div>
           <Routes>
+            <Route path="/" element={<Home seteditData={seteditData} editData={editData} />} />
             <Route path="/crud-test-efishery/" element={<Home seteditData={seteditData} editData={editData} />} />
             <Route path="/crud-test-efishery/Add" element={<AddComodity />} />
             <Route path="/crud-test-efishery/Edit" element={<EditComodity editData={editData} />} />
