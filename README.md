@@ -22,6 +22,7 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
 example: 
 docker build -t test .
+
 [+] Building 3.7s (9/9) FINISHED
  => [internal] load build definition from Dockerfile                                                                                                                                                                        0.0s 
  => => transferring dockerfile: 32B                                                                                                                                                                                         0.0s 
@@ -43,6 +44,7 @@ docker build -t test .
 and run docker images for check the images you do is created or not , and make sure your name is listed at repository
 example: 
 docker images
+
 REPOSITORY          TAG       IMAGE ID       CREATED          SIZE
 test                latest    bc22b79794cf   54 seconds ago   1.4GB
 crud-test-efisher   latest    1a99376d0df2   21 minutes ago   1.4GB
@@ -57,5 +59,6 @@ docker run -p 3000:3000 -d test
 then you can check with this command, that your image is  running well
 
 example:
+
 CONTAINER ID   IMAGE     COMMAND                  CREATED              STATUS              PORTS                    NAMES
 8c8d3d10b1e7   test      "docker-entrypoint.s…"   About a minute ago   Up About a minute   0.0.0.0:3000->3000/tcp   stoic_greider
