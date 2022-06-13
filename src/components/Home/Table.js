@@ -256,7 +256,7 @@ function Table(props) {
                                                                 <AiTwotoneEdit
                                                                     onClick={async() => {
                                                                         await seteditData(cell.row.original)
-                                                                        navigate('/edit')
+                                                                        navigate('/crud-test-efishery/edit')
                                                                     }}
                                                                     className='w-8 h-8 text-[#C4A484] mr-4' />
                                                                 <AiFillDelete

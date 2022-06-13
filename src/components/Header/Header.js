@@ -54,10 +54,10 @@ function Header() {
           >
             <ul>
               <li>
-                <Link to="/">Home</Link>
+                <Link to="/crud-test-efishery/">Home</Link>
               </li>
               <li>
-                <Link to="/Add">Add Comodity</Link>
+                <Link to="/crud-test-efishery/Add">Add Comodity</Link>
               </li>
             </ul>
           </nav>

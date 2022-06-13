@@ -108,7 +108,7 @@ const EditComodity = (props) => {
                     setsuccessAdd(true)
                     setTimeout(() => {
                       setsuccessAdd(false)
-                      navigate('/')
+                      navigate('/crud-test-efishery/')
                     }, 2500);
                     // nav to root
                   }, 1000);
